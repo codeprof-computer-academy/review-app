@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 116, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body h1{
+    color:white;
+    font-size: 25px;
+    font-weight: 100;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 100px;
+
+}
+
+body div{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+
+}
+
+body div aside{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    z-index: 10;
+}
+
+body div aside h2{
+  color:green;
+}
+
+/* utility class */
+aside.show{
+    display: flex;
+}
+
+body div > img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    top:-50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 20;
+}
+
+body div > h3{
+    font-size: 12px;
+    color:#333;
+    width: 100%;
+    text-align: center;
+}
+
+body div > p{
+    font-size: 10px;
+     color: grey;
+     margin-top: 8px;
+}
+
+
+body div>form {
+
+    background-color: whitesmoke;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+    margin: 10px 0;
+}
+
+
+
+body div>form textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid rgb(7, 116, 194);
+    outline: none;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body div>form button {
+    background-color: transparent;
+    border: none;
+    color: rgb(7, 116, 194);
+    font-size: 14px;
+    align-self: flex-end;
+    margin-right: 10px;
+
+}
+
+
+body div > article{
+   font-size: 9px;
+   font-weight: bold;
+   color:black;
+}
+
+
+body div >span{
+    width: fit-content;
+    display: flex;
+    gap:6px;
+    margin: 10px 0 20px 0;
+
+}
+
+body div > span img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+body div > span img:hover{
+    transform: scale(2);
+}
+
+
+
+body div small{
+  
+   width: fit-content;
+   background-color: rgb(240, 240, 240);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:8px;
+   border-radius: 20px;
+   padding: 4px 20px;
+   cursor: pointer;
+}
+
+body div small img{
+    width: 10px;
+    transition: 0.5s;
+    object-fit: contain;
+}
+
+body div small:hover img{
+    transform: scale(1.4);
+}
+
+
